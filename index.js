@@ -13,7 +13,7 @@ const PORT = process.env.PORT||3001;
 const uri = process.env.ATLAS_URI;
 
 // mongoose.connect('mongodb://localhost:27017/daily1DB');
-mongoose.connect( uri );
+mongoose.connect( "mongodb+srv://adityachoudhary1980:Aditya88@cluster0.9ikok.mongodb.net/keeper1DB" );
 
 app.get('/',(req,res)=>{
     Note.find({},(err,foundNotes)=>{
